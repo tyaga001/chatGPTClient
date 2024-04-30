@@ -16,7 +16,7 @@ Before you begin, ensure you have the following installed:
 - npm or Yarn
 - Python 3.x
 
-## Installation
+## Setup Instructions
 
 Clone the repository:
 
@@ -24,12 +24,35 @@ Clone the repository:
 git clone https://github.com/yourusername/chatgpt-client-wing-react.git
 cd chatgpt-client-wing-react
 
+To get this project up and running on your local machine, follow these steps:
 
-### Run the React development server:
+### Backend Setup
 
-npm start
+1. Navigate to the Backend Directory:
 
-The application should now be running and accessible at http://localhost:3000.
+cd backend
+
+Run the Wing server:
+wing it
+
+
+### Frontend Setup
+
+1. Navigate to the Frontend Directory:
+cd frontend
+
+Start the React application:
+
+
+### Configuration
+
+- OpenAI API Key: You will need to add your OpenAI API key to the backend configuration. Place it inside the `secrets.json` file in your backend directory and inside the `.env` file in your frontend directory.
+
+### Requirements
+
+- Wing: Ensure that Wing is installed on your machine. Visit [Wing Installation Guide](https://example.com/wing-installation) for detailed installation instructions.
+
+After completing these steps, your ChatGPT client should be fully functional and ready to use.
 
 Usage
 
@@ -38,7 +61,3 @@ To use the ChatGPT client:
 Open your browser and go to http://localhost:3000.
 Type your query into the input box.
 Press enter or click the send button to receive a response from ChatGPT.
-
-### License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
