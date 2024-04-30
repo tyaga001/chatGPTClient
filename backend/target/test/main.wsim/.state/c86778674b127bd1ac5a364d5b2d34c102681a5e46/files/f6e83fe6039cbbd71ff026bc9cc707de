@@ -1,0 +1,1 @@
+{"mock":{"max_tokens":2048,"model":"gpt-3.5-turbo","messages":[{"role":"user","content":"you are an assistant with the following personality: Respondent. \"\\\"hey\\\"\""}]}}

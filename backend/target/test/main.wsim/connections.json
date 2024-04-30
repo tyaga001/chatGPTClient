@@ -1,0 +1,125 @@
+{
+  "version": "connections-0.1",
+  "connections": [
+    {
+      "source": "root/env0/Api",
+      "target": "root/env0/Api/OnRequestHandler0",
+      "name": "post()"
+    },
+    {
+      "source": "root/env0/Api",
+      "target": "root/env0/Api/OnRequestHandler1",
+      "name": "get()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler0",
+      "target": "root/env0/$Closure2_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler0",
+      "target": "root/env0/Counter",
+      "name": "inc()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler0",
+      "target": "root/env0/Table",
+      "name": "insert()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler0",
+      "target": "root/env0/Helpful Assistant",
+      "name": "sendPrompt()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler0",
+      "target": "root/env0/Helpful Assistant/Assistant",
+      "name": "ask()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler0",
+      "target": "root/env0/Helpful Assistant/NextID",
+      "name": "inc()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler0",
+      "target": "root/env0/Joke Store",
+      "name": "put()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler0",
+      "target": "root/env0/Helpful Assistant/Assistant/OpenAI",
+      "name": "createCompletion()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler0",
+      "target": "root/env0/OpenAI Secret",
+      "name": "value()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler1",
+      "target": "root/env0/$Closure3_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/env0/Api/OnRequestHandler1",
+      "target": "root/env0/Table",
+      "name": "list()"
+    },
+    {
+      "source": "root/env0/START HERE",
+      "target": "root/env0/$Closure1_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/env0/START HERE",
+      "target": "root/env0/New answer",
+      "name": "publish()"
+    },
+    {
+      "source": "root/env0/START HERE",
+      "target": "root/env0/Helpful Assistant",
+      "name": "sendPrompt()"
+    },
+    {
+      "source": "root/env0/START HERE",
+      "target": "root/env0/Helpful Assistant/Assistant",
+      "name": "ask()"
+    },
+    {
+      "source": "root/env0/START HERE",
+      "target": "root/env0/Helpful Assistant/NextID",
+      "name": "inc()"
+    },
+    {
+      "source": "root/env0/START HERE",
+      "target": "root/env0/Joke Store",
+      "name": "put()"
+    },
+    {
+      "source": "root/env0/START HERE",
+      "target": "root/env0/Helpful Assistant/Assistant/OpenAI",
+      "name": "createCompletion()"
+    },
+    {
+      "source": "root/env0/START HERE",
+      "target": "root/env0/OpenAI Secret",
+      "name": "value()"
+    },
+    {
+      "source": "root/env0/App/AppSim/Service",
+      "target": "root/env0/App/AppSim/$Closure1_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/env0/App/AppSim/Service",
+      "target": "root/env0/App/AppSim/State",
+      "name": "set()"
+    },
+    {
+      "source": "root/env0/App/Field/Handler",
+      "target": "root/env0/App/$Closure1_0",
+      "name": "handle()"
+    }
+  ]
+}

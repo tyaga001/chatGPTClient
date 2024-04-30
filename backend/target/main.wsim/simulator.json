@@ -1,0 +1,490 @@
+{
+  "types": {
+    "@winglang/sdk.cloud.Api": {
+      "className": "Api",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\api.inflight.js"
+    },
+    "@winglang/sdk.cloud.Bucket": {
+      "className": "Bucket",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\bucket.inflight.js"
+    },
+    "@winglang/sdk.cloud.Counter": {
+      "className": "Counter",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\counter.inflight.js"
+    },
+    "@winglang/sdk.cloud.Domain": {
+      "className": "Domain",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\domain.inflight.js"
+    },
+    "@winglang/sdk.cloud.Endpoint": {
+      "className": "Endpoint",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\endpoint.inflight.js"
+    },
+    "@winglang/sdk.sim.EventMapping": {
+      "className": "EventMapping",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\event-mapping.inflight.js"
+    },
+    "@winglang/sdk.cloud.Function": {
+      "className": "Function",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\function.inflight.js"
+    },
+    "@winglang/sdk.cloud.OnDeploy": {
+      "className": "OnDeploy",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\on-deploy.inflight.js"
+    },
+    "@winglang/sdk.sim.Policy": {
+      "className": "Policy",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\policy.inflight.js"
+    },
+    "@winglang/sdk.cloud.Queue": {
+      "className": "Queue",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\queue.inflight.js"
+    },
+    "@winglang/sdk.ex.Redis": {
+      "className": "Redis",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\redis.inflight.js"
+    },
+    "@winglang/sdk.cloud.Schedule": {
+      "className": "Schedule",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\schedule.inflight.js"
+    },
+    "@winglang/sdk.cloud.Secret": {
+      "className": "Secret",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\secret.inflight.js"
+    },
+    "@winglang/sdk.cloud.Service": {
+      "className": "Service",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\service.inflight.js"
+    },
+    "@winglang/sdk.sim.State": {
+      "className": "State",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\state.inflight.js"
+    },
+    "@winglang/sdk.sim.Container": {
+      "className": "Container",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\container.inflight.js"
+    },
+    "@winglang/sdk.ex.Table": {
+      "className": "Table",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\table.inflight.js"
+    },
+    "@winglang/sdk.std.TestRunner": {
+      "className": "TestRunner",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\test-runner.inflight.js"
+    },
+    "@winglang/sdk.cloud.Topic": {
+      "className": "Topic",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\topic.inflight.js"
+    },
+    "@winglang/sdk.cloud.Website": {
+      "className": "Website",
+      "sourcePath": "C:\\Users\\loyal\\AppData\\Roaming\\npm\\node_modules\\winglang\\node_modules\\@winglang\\sdk\\lib\\target-sim\\website.inflight.js"
+    }
+  },
+  "resources": {
+    "root/Default/Api/Endpoint": {
+      "type": "@winglang/sdk.cloud.Endpoint",
+      "props": {
+        "inputUrl": "${wsim#root/Default/Api#attrs.url}",
+        "url": "${wsim#root/Default/Api#attrs.url}",
+        "label": "Api root/Default/Api"
+      },
+      "path": "root/Default/Api/Endpoint",
+      "addr": "c829fae637aa32836acf2076c609c41e797952c8ed"
+    },
+    "root/Default/Api/Policy": {
+      "type": "@winglang/sdk.sim.Policy",
+      "props": {
+        "principal": "${wsim#root/Default/Api#attrs.handle}",
+        "statements": [
+          {
+            "resourceHandle": "${wsim#root/Default/Api/OnRequestHandler0#attrs.handle}",
+            "operation": "invoke"
+          },
+          {
+            "resourceHandle": "${wsim#root/Default/Api/OnRequestHandler1#attrs.handle}",
+            "operation": "invoke"
+          }
+        ]
+      },
+      "path": "root/Default/Api/Policy",
+      "addr": "c8459a92101e81b0b80e819d2c8d301c3944f76333"
+    },
+    "root/Default/Counter": {
+      "type": "@winglang/sdk.cloud.Counter",
+      "props": {
+        "initial": 0
+      },
+      "path": "root/Default/Counter",
+      "addr": "c8205b88cff2f0e7dbd1524b9ffbab04e1660dbe08"
+    },
+    "root/Default/Table": {
+      "type": "@winglang/sdk.ex.Table",
+      "props": {
+        "name": "assistant",
+        "columns": {
+          "question": 0,
+          "answer": 0
+        },
+        "primaryKey": "id",
+        "initialRows": {}
+      },
+      "path": "root/Default/Table",
+      "addr": "c8ee569d42d12ba880cfe64cf95a6321603ff47b20"
+    },
+    "root/Default/Helpful Assistant/NextID": {
+      "type": "@winglang/sdk.cloud.Counter",
+      "props": {
+        "initial": 0
+      },
+      "path": "root/Default/Helpful Assistant/NextID",
+      "addr": "c8282a13c09d8c03988c5e3ceeb5ce7837f048efbd"
+    },
+    "root/Default/Joke Store": {
+      "type": "@winglang/sdk.cloud.Bucket",
+      "props": {
+        "public": false,
+        "initialObjects": {},
+        "topics": {}
+      },
+      "path": "root/Default/Joke Store",
+      "addr": "c8a374017c764b7dc106640645e317ba717562a09e"
+    },
+    "root/Default/OpenAI Secret": {
+      "type": "@winglang/sdk.cloud.Secret",
+      "props": {
+        "name": "OAIAPIKey"
+      },
+      "path": "root/Default/OpenAI Secret",
+      "addr": "c8271b1c272fe48cdcaf265b635385625394f79573"
+    },
+    "root/Default/Api/OnRequestHandler0": {
+      "type": "@winglang/sdk.cloud.Function",
+      "props": {
+        "sourceCodeFile": ".wing\\onrequesthandler0_c8a03e6b.cjs",
+        "sourceCodeLanguage": "javascript",
+        "environmentVariables": {
+          "WING_TARGET": "sim",
+          "COUNTER_HANDLE_660dbe08": "${wsim#root/Default/Counter#attrs.handle}",
+          "TABLE_HANDLE_3ff47b20": "${wsim#root/Default/Table#attrs.handle}",
+          "COUNTER_HANDLE_f048efbd": "${wsim#root/Default/Helpful Assistant/NextID#attrs.handle}",
+          "BUCKET_HANDLE_7562a09e": "${wsim#root/Default/Joke Store#attrs.handle}",
+          "SECRET_HANDLE_94f79573": "${wsim#root/Default/OpenAI Secret#attrs.handle}"
+        },
+        "timeout": 60000,
+        "concurrency": 100
+      },
+      "policy": [
+        {
+          "operation": "inc",
+          "resourceHandle": "${wsim#root/Default/Counter#attrs.handle}"
+        },
+        {
+          "operation": "insert",
+          "resourceHandle": "${wsim#root/Default/Table#attrs.handle}"
+        },
+        {
+          "operation": "inc",
+          "resourceHandle": "${wsim#root/Default/Helpful Assistant/NextID#attrs.handle}"
+        },
+        {
+          "operation": "put",
+          "resourceHandle": "${wsim#root/Default/Joke Store#attrs.handle}"
+        },
+        {
+          "operation": "value",
+          "resourceHandle": "${wsim#root/Default/OpenAI Secret#attrs.handle}"
+        }
+      ],
+      "path": "root/Default/Api/OnRequestHandler0",
+      "addr": "c8a03e6b20dce533cd2fc66107e6169a090a28cdaf",
+      "deps": [
+        "root/Default/Counter",
+        "root/Default/Table",
+        "root/Default/Helpful Assistant/NextID",
+        "root/Default/Joke Store",
+        "root/Default/OpenAI Secret"
+      ]
+    },
+    "root/Default/Api": {
+      "type": "@winglang/sdk.cloud.Api",
+      "props": {
+        "openApiSpec": {
+          "paths": {
+            "/assistant": {
+              "post": {
+                "operationId": "post-assistant",
+                "responses": {
+                  "200": {
+                    "description": "200 response",
+                    "content": {},
+                    "headers": {
+                      "Access-Control-Allow-Origin": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Methods": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Headers": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Max-Age": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "parameters": []
+              },
+              "get": {
+                "operationId": "get-assistant",
+                "responses": {
+                  "200": {
+                    "description": "200 response",
+                    "content": {},
+                    "headers": {
+                      "Access-Control-Allow-Origin": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Methods": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Allow-Headers": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      },
+                      "Access-Control-Max-Age": {
+                        "schema": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "parameters": []
+              }
+            }
+          },
+          "openapi": "3.0.3"
+        },
+        "corsHeaders": {
+          "defaultResponse": {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Expose-Headers": "",
+            "Access-Control-Allow-Credentials": "false"
+          },
+          "optionsResponse": {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Headers": "Content-Type,Authorization,X-Requested-With",
+            "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,HEAD,OPTIONS",
+            "Access-Control-Max-Age": "300"
+          }
+        }
+      },
+      "path": "root/Default/Api",
+      "addr": "c844b5bd94b86e1a199d660e51d0967df1ceab8c24"
+    },
+    "root/Default/Api/ApiEventMapping0": {
+      "type": "@winglang/sdk.sim.EventMapping",
+      "props": {
+        "subscriber": "${wsim#root/Default/Api/OnRequestHandler0#attrs.handle}",
+        "publisher": "${wsim#root/Default/Api#attrs.handle}",
+        "subscriptionProps": {
+          "routes": [
+            {
+              "pathPattern": "/assistant",
+              "method": "POST"
+            }
+          ]
+        }
+      },
+      "path": "root/Default/Api/ApiEventMapping0",
+      "addr": "c81b472b3c1d10b65303684e2e1934fb59cce39368",
+      "deps": [
+        "root/Default/Api/OnRequestHandler0",
+        "root/Default/Api"
+      ]
+    },
+    "root/Default/Api/OnRequestHandler1": {
+      "type": "@winglang/sdk.cloud.Function",
+      "props": {
+        "sourceCodeFile": ".wing\\onrequesthandler1_c868593e.cjs",
+        "sourceCodeLanguage": "javascript",
+        "environmentVariables": {
+          "WING_TARGET": "sim",
+          "TABLE_HANDLE_3ff47b20": "${wsim#root/Default/Table#attrs.handle}"
+        },
+        "timeout": 60000,
+        "concurrency": 100
+      },
+      "policy": [
+        {
+          "operation": "list",
+          "resourceHandle": "${wsim#root/Default/Table#attrs.handle}"
+        }
+      ],
+      "path": "root/Default/Api/OnRequestHandler1",
+      "addr": "c868593e34249979439c49531c7f5f95edaec54089",
+      "deps": [
+        "root/Default/Table"
+      ]
+    },
+    "root/Default/Api/ApiEventMapping1": {
+      "type": "@winglang/sdk.sim.EventMapping",
+      "props": {
+        "subscriber": "${wsim#root/Default/Api/OnRequestHandler1#attrs.handle}",
+        "publisher": "${wsim#root/Default/Api#attrs.handle}",
+        "subscriptionProps": {
+          "routes": [
+            {
+              "pathPattern": "/assistant",
+              "method": "GET"
+            }
+          ]
+        }
+      },
+      "path": "root/Default/Api/ApiEventMapping1",
+      "addr": "c814a8692af1804b71f0a091aad20c8f2dce5f38f5",
+      "deps": [
+        "root/Default/Api/OnRequestHandler1",
+        "root/Default/Api"
+      ]
+    },
+    "root/Default/Joke Store/Policy": {
+      "type": "@winglang/sdk.sim.Policy",
+      "props": {
+        "principal": "${wsim#root/Default/Joke Store#attrs.handle}",
+        "statements": []
+      },
+      "path": "root/Default/Joke Store/Policy",
+      "addr": "c8b9672ec5dfd7869642bd9f759463f0114b2efb57"
+    },
+    "root/Default/New answer/Policy": {
+      "type": "@winglang/sdk.sim.Policy",
+      "props": {
+        "principal": "${wsim#root/Default/New answer#attrs.handle}",
+        "statements": []
+      },
+      "path": "root/Default/New answer/Policy",
+      "addr": "c8b7a8f5bfc8752a94754ff47fd5423be898dd9cd6"
+    },
+    "root/Default/New answer": {
+      "type": "@winglang/sdk.cloud.Topic",
+      "props": {},
+      "path": "root/Default/New answer",
+      "addr": "c8f993fee94c5538b45cb5f9cb93b888758d96f823"
+    },
+    "root/Default/START HERE": {
+      "type": "@winglang/sdk.cloud.Function",
+      "props": {
+        "sourceCodeFile": ".wing\\start_here_c89f8a36.cjs",
+        "sourceCodeLanguage": "javascript",
+        "environmentVariables": {
+          "WING_TARGET": "sim",
+          "TOPIC_HANDLE_8d96f823": "${wsim#root/Default/New answer#attrs.handle}",
+          "COUNTER_HANDLE_f048efbd": "${wsim#root/Default/Helpful Assistant/NextID#attrs.handle}",
+          "BUCKET_HANDLE_7562a09e": "${wsim#root/Default/Joke Store#attrs.handle}",
+          "SECRET_HANDLE_94f79573": "${wsim#root/Default/OpenAI Secret#attrs.handle}"
+        },
+        "timeout": 60000,
+        "concurrency": 100
+      },
+      "policy": [
+        {
+          "operation": "publish",
+          "resourceHandle": "${wsim#root/Default/New answer#attrs.handle}"
+        },
+        {
+          "operation": "inc",
+          "resourceHandle": "${wsim#root/Default/Helpful Assistant/NextID#attrs.handle}"
+        },
+        {
+          "operation": "put",
+          "resourceHandle": "${wsim#root/Default/Joke Store#attrs.handle}"
+        },
+        {
+          "operation": "value",
+          "resourceHandle": "${wsim#root/Default/OpenAI Secret#attrs.handle}"
+        }
+      ],
+      "path": "root/Default/START HERE",
+      "addr": "c89f8a36a2620dc10e2e49f3c85a10704f3f3efd76",
+      "deps": [
+        "root/Default/New answer",
+        "root/Default/Helpful Assistant/NextID",
+        "root/Default/Joke Store",
+        "root/Default/OpenAI Secret"
+      ]
+    },
+    "root/Default/App/AppSim/State": {
+      "type": "@winglang/sdk.sim.State",
+      "props": {},
+      "path": "root/Default/App/AppSim/State",
+      "addr": "c86b5e6d8c9e78c3c5bb774d0c8f1762da92652da3"
+    },
+    "root/Default/App/AppSim/Service": {
+      "type": "@winglang/sdk.cloud.Service",
+      "props": {
+        "environmentVariables": {
+          "WING_TARGET": "sim",
+          "HOME": "localhost:4000",
+          "PATH": "C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\loyal\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\loyal\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\loyal\\AppData\\Roaming\\npm",
+          "STATE_HANDLE_92652da3": "${wsim#root/Default/App/AppSim/State#attrs.handle}",
+          "WING_TOKEN_WSIM_ROOT_DEFAULT_API_ATTRS_URL": "${wsim#root/Default/Api#attrs.url}"
+        },
+        "sourceCodeFile": ".wing\\service_c85e9829.cjs",
+        "autoStart": true
+      },
+      "policy": [
+        {
+          "operation": "set",
+          "resourceHandle": "${wsim#root/Default/App/AppSim/State#attrs.handle}"
+        }
+      ],
+      "path": "root/Default/App/AppSim/Service",
+      "addr": "c85e98291ea245a56d1d16673a9cd82cf48d842371",
+      "deps": [
+        "root/Default/App/AppSim/State"
+      ]
+    },
+    "root/Default/App/Field/Handler": {
+      "type": "@winglang/sdk.cloud.Function",
+      "props": {
+        "sourceCodeFile": ".wing\\handler_c8d7d26f.cjs",
+        "sourceCodeLanguage": "javascript",
+        "environmentVariables": {
+          "WING_TARGET": "sim",
+          "WING_TOKEN_WSIM_ROOT_DEFAULT_APP_APPSIM_STATE_ATTRS_URL": "${wsim#root/Default/App/AppSim/State#attrs.url}"
+        },
+        "timeout": 60000,
+        "concurrency": 100
+      },
+      "policy": [],
+      "path": "root/Default/App/Field/Handler",
+      "addr": "c8d7d26fcdd3ee8f15971be048decb293e271c234b"
+    },
+    "root/Default/App/Endpoint": {
+      "type": "@winglang/sdk.cloud.Endpoint",
+      "props": {
+        "inputUrl": "${wsim#root/Default/App/AppSim/State#attrs.url}",
+        "url": "${wsim#root/Default/App/AppSim/State#attrs.url}"
+      },
+      "path": "root/Default/App/Endpoint",
+      "addr": "c819ec9b3ddc9cb5bd572be771a86357bc117cb6d8"
+    }
+  },
+  "sdkVersion": "0.72.6"
+}
