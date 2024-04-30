@@ -1,0 +1,128 @@
+
+
+body {
+  
+}
+.header h1{
+  text-align: center;
+  padding-top: 1rem;
+
+}
+.header p {
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 3rem;
+}
+
+.chat-area{
+  border: 2px solid black;
+  border-radius: 30px 20px 12px;
+  height: 80vh;
+  overflow-y: auto;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5rem;
+ 
+} 
+.chat-area-content{
+  padding: 1rem;
+  
+  
+}
+.chat-area-content{
+  padding-bottom: .4rem;
+  padding-left: .5rem;
+
+}
+
+.type-area {
+  /* position: fixed;
+  bottom: 1rem; */
+  position: sticky;
+  bottom: 0;
+ 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin-top: calc(80vh - 15vh)
+
+  
+}
+
+.type-area input {
+  border: 3px solid black;
+  border-radius: 30px;
+  width: 20rem;
+  outline: none;
+  height: 2.5rem;
+  
+}
+
+.type-area button {
+  margin-left: .8rem;
+  outline: auto;
+  background-color: green;
+  border-radius: 12px;
+  width: 4rem;
+  height: 2rem;
+  color: white;
+}
+.user-bot-chat {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  /* Fallback for browsers without fit-content support */
+  /* Set minimum width */
+  /* min-width: 200px;  */
+  /* Set maximum width (adjust as needed) */
+  /* max-width: 400px;  */
+
+  border-radius: 4px 12px;
+  letter-spacing: 0.5px;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.user-question {
+  color: blue;
+  
+}
+
+
+.response{
+  padding-left: .5rem;
+  padding-right: .5rem;
+  background-color: rgb(225, 252, 230);
+  text-align: justify;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+
+
+.thinking {
+ text-align: right; 
+ animation: move 1s infinite
+}
+
+@keyframes move {
+  0% {
+    color: green;
+    
+  }
+  30% {
+    color: blue
+  }
+  60%{
+    color: yellow
+  }
+  100% {
+    color: black;
+    
+  }
+}
+
+.notThinking {
+  display: none;
+}
